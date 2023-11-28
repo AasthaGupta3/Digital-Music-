@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Music</title>
+        <link rel="stylesheet" href="playlist.css">
+        </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplzVV3ETdQM5-l-x9QvNc6sn_WIIVVBAWNw&usqp=CAU&reload=on" alt="Digital music">Digital Music</li>
+            <li> <a href="dde.html">Home</a>  </li>
+            <li> <a href="about.html">About</a></li>
+            <li><a href="index1.html">Your Playlist</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <div class="songList">
+            <h1>Your Playlist</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img  src="Lover.jpg"alt="1">
+                    <span class="songName">Lover</span>
+                    <span class="songlistplay"><span class="timestamp">03:59 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="let me.jpg">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">03:26 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="paper.jpg">
+                    <span class="songName">Paper Rings</span>
+                    <span class="songlistplay"><span class="timestamp">03:43 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="kudhi.jpg">
+                    <span class="songName">Kudi NU Nachne De</span>
+                    <span class="songlistplay"><span class="timestamp">03:02 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="enchanted.jpg">
+                    <span class="songName">Enchanted</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="despacito.jpg">
+                    <span class="songName">Despacito</span>
+                    <span class="songlistplay"><span class="timestamp">04:22 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="shape of you.jpg">
+                    <span class="songName">Shape Of You</span>
+                    <span class="songlistplay"><span class="timestamp">03:56 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cheap.jpg">
+                    <span class="songName">Cheap Thrills</span>
+                    <span class="songlistplay"><span class="timestamp">03:45 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="epiphany.jpg">
+                    <span class="songName">Epiphany</span>
+                    <span class="songlistplay"><span class="timestamp">04:22 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="Butter.png">
+                    <span class="songName">Butter</span>
+                    <span class="songlistplay"><span class="timestamp">02:57 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Lover</span>
+        </div>
+    </div>
+    <script src="playlist.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
