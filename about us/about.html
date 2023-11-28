@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplzVV3ETdQM5-l-x9QvNc6sn_WIIVVBAWNw&usqp=CAU&reload=on" alt="Digital music">Digital Music</li>
+            <li><a href="dde.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li><a href="index1.html">Your Playlist</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
     <section class="hero">
         <div class="heading">
             <h1>About Us</h1>
@@ -14,13 +24,32 @@
         <div class="container">
             <div class="hero-container">
                 <h2>WELCOME TO OUR WEBSITE</h2>
-                <p>The digital music website offers a vast library of songs across genres, providing users with instant access to a diverse musical experience. With user-friendly interfaces, curated playlists, and personalized recommendations, it revolutionizes how we discover, enjoy, and share music in the digital age.</p>
-                <button class="cta-button"> Learn more</button>
+                <p>The digital music website offers a vast library of songs across genres, providing users with instant access to a diverse musical experience. With user-friendly interfaces, curated playlists, and personalized recommendations, it revolutionizes how we discover, enjoy, and share music in the digital age.</p> <br>
+                <p>Digital music websites often provide curated playlists and personalized recommendations based on a user's listening history. This helps users discover new music that aligns with their preferences.<span id="dots">...</span><span id="more">Digital music websites provide a platform for independent and established artists to showcase their work. This democratization of music distribution has led to increased opportunities for new and emerging artists.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+               
             </div>
             <div class="hero-image">
                 <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D" alt="">
             </div>
         </div>
     </section>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
 </body>
 </html>
