@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#MainForm { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: #3870a8;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+
+#MainForm h2 {
+    margin-bottom: 20px;
+}
+
+
+.form-floating {
+    margin-bottom: 15px;
+}
+
+
+.btn-primary {
+    background-color: #44c9ce;
+    color: #fff;
+}
+
+
+.btn-primary.me-2 {
+    margin-right: 8px;
+}
