@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="show.css">
+    <script src="https://kit.fontawesome.com/fff0edda0f.js" crossorigin="anonymous"></script>
+    <script>
+        var audio; 
+
+     
+        function playMusic(audioUrl) {
+            audio = new Audio(audioUrl);
+            audio.play();
+        }
+
+        function stopMusic() {
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1614292253389-bd2c1f89cd0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRleHR1cmV8ZW58MHx8MHx8fDA%3D); background-size: cover;">
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplzVV3ETdQM5-l-x9QvNc6sn_WIIVVBAWNw&usqp=CAU&reload=on"
+                    alt="Digital music" />Digital Music
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index1.html">Your Playlist</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <article class="heading">
+        <h1>LIBRARY</h1>
+        
+    </article>
+
+
+    <div class="songs">
+        <section class="container">
+            <div style="background-color: darkkhaki;" onmouseover="playMusic('8.mp3')" onmouseout="stopMusic()">
+                <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG11c2ljfGVufDB8fDB8fHww" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+            <div style="background-color: pink;" onmouseover="playMusic('1.mp3')" onmouseout="stopMusic()">
+                <img src="https://images.unsplash.com/photo-1645562017601-baf34d980ebd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnQlMjBzb25nc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+            <div style="background-color: lightblue;" onmouseover="playMusic('3.mp3')" onmouseout="stopMusic()">
+                <img src="https://media.istockphoto.com/id/938763258/photo/young-male-singer-with-a-microphone-performing-on-stage-in-backlit.webp?b=1&s=170667a&w=0&k=20&c=VQRMfLuvMwXTdpFl1utkB6CXB6Rn5_bfuH8AljsnscU=" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+            <div style="background-color: palevioletred;" onmouseover="playMusic('4.mp3')" onmouseout="stopMusic()">
+                <img src="https://images.unsplash.com/photo-1592636120953-3d2b28ebfd69?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwMnxfOHpGSHVoUmh5b3x8ZW58MHx8fHx8" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+            <div style="background-color: rosybrown;" onmouseover="playMusic('5.mp3')" onmouseout="stopMusic()">
+                <img src="https://images.unsplash.com/photo-1617803021651-8df9d37672a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHNvbmdzfGVufDB8fDB8fHww" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+            <div style="background-color: plum;" onmouseover="playMusic('10.mp3')" onmouseout="stopMusic()">
+                <img src="https://media.istockphoto.com/id/1192030037/photo/vocalist-singing-to-microphone-singer-in-silhouette.jpg?s=2048x2048&w=is&k=20&c=ynLmgBMAd3v6KXRLV3z2mrJEbZNdJMHQQwaE2lp4710=" alt="">
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+            </div>
+    
+    </div>
+    </section>
+
+    <audio id="audioPlayer" style="display:none;"></audio>
+</body>
+</html>
